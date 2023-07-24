@@ -2,7 +2,9 @@ package com.example.ecommerceapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -12,9 +14,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
     }
     public void signup(View view){
-        startActivity(new Intent(LoginActivity.this,MainActivity.class));
+        startActivity(new Intent(LoginActivity.this,RegistrationActivity.class));
     }
     public void signin(View view){
-        startActivity(new Intent(LoginActivity.this,RegistrationActivity.class));
+        startActivity(new Intent(LoginActivity.this,MainActivity.class));
     }
 }
