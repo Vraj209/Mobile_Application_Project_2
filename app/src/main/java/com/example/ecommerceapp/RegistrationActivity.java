@@ -25,9 +25,9 @@ public class RegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
         // Hide the action bar (supportActionBar) for this activity.
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().hide();
-        }
+//        if (getSupportActionBar() != null) {
+//            getSupportActionBar().hide();
+//        }
 
         auth = FirebaseAuth.getInstance();
 
@@ -83,7 +83,7 @@ public class RegistrationActivity extends AppCompatActivity {
                     }
                 });
 
-//        startActivity(new Intent(RegistrationActivity.this,MainActivity.class));
+        startActivity(new Intent(RegistrationActivity.this,MainActivity.class));
     }
     public void signin(View view){
         startActivity(new Intent(RegistrationActivity.this,LoginActivity.class));
